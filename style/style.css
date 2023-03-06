@@ -1,0 +1,93 @@
+*{
+    /* font-size: 14px; */
+    
+}
+body{
+    background-color: #1e202b;
+    
+    
+}
+
+nav a img{
+    width: 60px;
+    height: 35px;
+}
+nav a span{
+    font-size: 0.7142857143em;
+}
+nav ul li .active{
+    color: #009ad8 !important;
+    border: 2px solid #009ad8;
+    
+    
+}
+.title{
+    font-size: 20px;
+    
+}
+
+nav ul li:hover{
+    color: #009ad8 !important;
+    border: 2px solid #009ad8;
+    border-radius: 25px;
+    
+}
+
+.sec2{
+    background-image: url(../image/logo@v2x.png);
+    background-size: cover;
+    padding: 70px 0;
+    height: 350px;
+}
+.form{
+    background-color: #1e202b;
+}
+.form button{
+    background-color: #009ad8;
+}
+.blueColor{
+    color: #009ad8;
+}
+
+.color3{
+    color: #bfc1c8;
+    line-height: 1.5;
+    background-color: rgb(30, 32, 43);
+}
+.color3 .title{
+    background-color: rgb(30, 32, 43);
+}
+.color2{
+    line-height: 1.5;
+    color: #bfc1c8;
+    background-color: rgb(38, 41, 54);
+}
+.layer2{
+    position: absolute;
+    width: 100%;
+    bottom: -145px;
+}
+footer{
+    background: #262936;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    color: #bfc1c8;
+}
+footer .icon a i{
+    color: #009ad8 ;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s ease;
+    font-size: 22.4px;
+    border-radius: 50%;
+    background: #1e202b;
+    text-align: center;
+    line-height: 2;
+    text-decoration: none;
+    
+}
+footer .icon a:hover i{
+    background-color: #009ad8;
+    color: #fff;
+}

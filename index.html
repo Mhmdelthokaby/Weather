@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <!-- Start nav -->
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container w-75 py-4">
+            <a class="navbar-brand d-flex align-items-center text-white hstack gap-3"  href="#"><img src="image/logo@2x.png" class="" alt=""><div><p class="p-0 m-0 fw-bold">Weather</p>
+                                                    <span>tagline goes here</span>    
+            </div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2  text-white mb-lg-0 hstack gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white px-4 py-1 rounded-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+
+    <!-- section2 -->
+    <section class="sec2">
+        <div class="container w-75 py-3 rounded-5">
+            <div class="form w-100  d-flex justify-content-between rounded-5">
+                <input  id="inLocation" type="text" class="w-100 text-white bg-transparent  border-0 p-3" placeholder="Find your location">
+                <button class="rounded-5 text-white px-5 m-1 border-0">Find</button>
+            </div>
+        </div>
+    </section>
+    <!-- end section2 -->
+
+    <!-- section3 -->
+    <section class="sec3 position-relative ">
+        <div class="layer1">
+            <div class="layer2 text-white">
+                <div class="container w-75">
+                    <div class="row row-cols-md-3">
+                        <!-- 1 -->
+                        <div id="today" class="color2 rounded-start-3 ">
+                            <div class="title p-2 d-flex justify-content-between ">
+                                <span id="day"></span>
+                                <span id="date"></span>
+                            </div>
+                            <div class="p-2">
+                            <p class="py-2" id="location"></p>
+                            <div class="degree d-flex justify-content-between py-2 align-items-center">
+                                <div class="fs-1 fw-bold ">
+                                <span class="num text-white px-0" id="degree"></span>
+                                <sup class="text-white px-0">o</sup>
+                                <span class="text-white px-0">c</س>
+                                </div>
+                                <div id="img"></div>
+                            </div>
+                            <div><span class="blueColor" id="statu"></span></div>
+                            <div class="hstack gap-4 py-2">
+                                <span class="d-flex align-items-center"><div class="px-1" id="air"></div><i class="fa-solid fa-umbrella pe-2" ></i></span>
+                                <span class="d-flex align-items-center"><div class="px-1" id="wind"></div><i class="fa-solid fa-wind pe-2" ></i></span>
+                                <span class="d-flex align-items-center"><div class="px-1" id="direction"></div><i class="fa-regular fa-compass pe-2" ></i></span>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div id="tomorrow" class="color3 text-center">
+                            <div class="title py-2" id="day"></div>
+                            <div id="img"></div>
+                            <div class="big-degree fs-5 fw-bold">
+                                <span class="num text-white" id="bigDegree"></span>
+                                <sup class="text-white">o</sup>
+                                <span class="text-white">c</س>
+                                
+                            </div>
+                            <div class="small-degree">
+                                <span class="num" id="smallDegree"></span>
+                                <sup>o</sup>
+                                <span>c</س>
+                            </div>
+                            <div class="blueColor py-2" id="statu">
+                                
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div id="nextTomorrow" class="color2 text-center">
+                            <div class="title py-2" id="day"></div>
+                            <div id="img"></div>
+                            <div class="big-degree fs-5 fw-bold">
+                                <span class="num text-white" id="bigDegree"></span>
+                                <sup class="text-white">o</sup>
+                                <span class="text-white">c</س>
+                                
+                            </div>
+                            <div class="small-degree">
+                                <span class="num" id="smallDegree"></span>
+                                <sup>o</sup>
+                                <span>c</س>
+                            </div>
+                            <div class="blueColor py-2" id="statu">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section3 -->
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container w-75 py-2">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class=" form w-75  d-flex justify-content-between rounded-5">
+                    <input type="text" class="w-100 text-white bg-transparent  border-0 p-3" placeholder="Find your location">
+                    <button class="rounded-5 text-white px-5 m-1 border-0">Find</button>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <p class="py-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://kit.fontawesome.com/121833b321.js" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/test.js"></script>
+</body>
+
+</html>
